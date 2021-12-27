@@ -53,4 +53,6 @@ void foo(){
     __cyg_profile_func_exit(this_fn, call_site);
 }
 
-void foo() __attribute__((no_instrument_function));
+
+void __cyg_profile_func_enter (void *this_fn, void *call_siten)
+    __attribute__((no_instrument_function));
